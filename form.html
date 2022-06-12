@@ -283,6 +283,8 @@
         $(document).ready(function(){
             $('#enviar').click(function(){
                 var data = $('#registro').serialize();
+                alert(data);
+                return false;
                 $.ajax({
                     type:"POST",
                     url:"savedata.php",

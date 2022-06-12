@@ -1,6 +1,5 @@
 <?php
 require('fpdf/fpdf.php');
-include(db.php)
 class PDF extends fpdf
 {
     function Header()
