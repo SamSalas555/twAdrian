@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/svgbg.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Formulario-->
+    <div class="container">
+        <br><br><br>
+        <form action="" style="background-color:white; border-style: solid;  border:8px; border-radius:10px; border-color:white !important; padding:10px;" id="registro">
+            <div class="title">
+                <h1>Formulario de Registro</h1>
+            </div>
+            <fieldset>
+                <legend>Datos Generales</legend>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="ciclo">Ciclo Escolar</label>
+                        <input  class="form-control" type="text" name="ciclo" value="2022-2023" disabled>
+                    </div>
+                    <div class="col-md-6 ml-auto">
+                        <label for="cendi">CENDI</label>
+                        <select class="form-select" aria-label="Default select example" id="cendi">
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="Amalia">Amalia Solórzano de Cárdenas</option>
+                            <option value="Clementina" disabled>Clementina Batalla de Bassols</option>
+                            <option value="Eva" disabled>Eva Samano de López Mateos</option>
+                            <option value="Laura" disabled>Laura Pérez de Batis</option>
+                            <option value="Margarita" disabled>Margarita Salazar de Erro</option>
+                          </select>
+                    </div>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Datos del niño o niña: </legend>
+                <div class="row form-group">
+                    <div class="col-md-4 ml-auto">
+                        <label for="apPatN">Primer Apellido</label>
+                        <input type="text" name="apPatN" class="form-control" placeholder="Primer Apellido">
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <label for="apMat">Segundo Apellido</label>
+                        <input type="text" name="apMatN" class="form-control" placeholder="Segundo Apellido" >
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombreN" class="form-control" placeholder="Nombres" >
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4 ml-auto">
+                        <label for="fnac">Fecha de Nacimiento</label>
+                        <input type="text" class="form-control" name="fnac" placeholder="dd/mm/yy">
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <label for="anos">Años</label>
+                        <input type="text" class="form-control"  name="anos" placeholder="">
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <label for="meses">Meses</label>
+                        <input type="text" class="form-control" name="meses" placeholder="">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="curpN">CURP</label>
+                        <input type="text" class="form-control" name="curpN">
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+
+            <!--Datos del derecho habiente-->
+            <fieldset>
+                <legend>Datos del Derechohabiente:</legend>
+                <div class="row">
+                    <div class="col-md-4 ml-auto">
+                        <label for="apPat">Primer Apellido</label>
+                        <input type="text" name="apPatD" class="form-control" id="apPat">
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <label for="apMat">Segundo Apellido</label>
+                        <input type="text" name="apMatD" class="form-control" id="apMat">
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <label for="nombreD">Nombre</label>
+                        <input type="text" name="nombreD" class="form-control" id="nombre">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col">
+                        <label for="curpD">CURP</label>
+                        <input type="text" class="form-control" name="curpD">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-5">
+                        <label for="calle">Calle</label>
+                        <input type="text" class="form-control" name="calle">
+                    </div>
+                    <div class="col-md-1 ml-auto">
+                        <label for="numInt">Numero Int</label>
+                        <input type="number" class="form-control" name="numInt">
+                    </div>
+                    <div class="col-md-1 ml-auto">
+                        <label for="numExt">Numero Ext</label>
+                        <input type="text" class="form-control" name="numExt">
+                    </div>
+                    <div class="col-md-5 ml-auto">
+                        <label for="colonia">Colonia</label>
+                        <input type="text" class="form-control" name="colonia">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 ml-auto">
+                        <label for="alcaldia">Alcaldia</label>
+                        <input type="text" class="form-control" name="alcaldia">
+                    </div>
+                    <div class="col-md-3 ml-auto">
+                        <label for="entidadfed">Entidad Federativa</label>
+                        <input type="text" class="form-control" name="entidadfed">
+                    </div>
+                    <div class="col-md-2 ml-auto">
+                        <label for="cp">C.P.</label>
+                        <input type="number" class="form-control" name="cp">
+                    </div>
+                    <div class="col-md-2 ml-auto">
+                        <label for="telfijo">Telefono fijo</label>
+                        <input type="tel" class="form-control" name="telfijo">
+                    </div>
+                    <div class="col-md-2 ml-auto">
+                        <label for="telcel">Telefono Celular</label>
+                        <input type="tel" class="form-control" name="telcel">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-3 ml-auto">
+                        <label for="ocupacion">Ocupación</label>
+                        <input type="text" class="form-control" name="ocupacion">
+                    </div>
+                    <div class="col-md-3 ml-auto">
+                        <label for="plaza">Plaza</label>
+                        <input type="text" class="form-control" name="plaza">
+                    </div>
+                    <div class="col-md-3  ml-auto">
+                        <label for="puesto">Puesto</label>
+                        <input type="text" class="form-control" name="puesto">
+                    </div>
+                    <div class="col-md-3 ml-auto">
+                        <label for="sueldo">Sueldo</label>
+                        <input type="number" class="form-control" name="sueldo">
+                    </div>
+                </div>
+
+
+                <!--Datos de validacion para obtener documentos-->
+                <br>
+                <div class="row">
+                    <div class="col ml-auto">
+                        <label for="contrasena">Contraseña</label>
+                        <input type="password" id="password" class="form-control"  name="contrasena">
+                    </div>
+                    <div class="col ml-auto">
+                        <label for="nemp">Numero de Empleado</label>
+                        <input type="text" class="form-control" name="nemp">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                        <div class="col ml-auto">
+                            <label>Adscripción</label>
+                            <select class="form-select  mb-3" aria-label=".form-select-lg example" name="adscripcion">
+                                <option value="" disabled selected>Elige una opción</option>
+                                <option value="areaCentral">Área Central</option>
+                                <option value="" disabled>Nivel Medio Superior</option>
+                                <option value="cet1">CET 1</option>
+                                <option value="cecyt1">CECyT No. 1</option>
+                                <option value="cecyt2">CECyT No. 2</option>
+                                <option value="cecyt3">CECyT No. 3</option>
+                                <option value="cecyt4">CECyT No. 4</option>
+                                <option value="cecyt5">CECyT No. 5</option>
+                                <option value="cecyt6">CECyT No. 6</option>
+                                <option value="cecyt7">CECyT No. 7</option>
+                                <option value="cecyt8">CECyT No. 8</option>
+                                <option value="cecyt9">CECyT No. 9</option>
+                                <option value="cecyt10">CECyT No. 10</option>
+                                <option value="cecyt11">CECyT No. 11</option>
+                                <option value="cecyt12">CECyT No. 12</option>
+                                <option value="cecyt13">CECyT No. 13</option>
+                                <option value="cecyt14">CECyT No. 14</option>
+                                <option value="cecyt15">CECyT No. 15</option>
+                                <option value="cecyt16">CECyT No. 16</option>
+                                <option value="cecyt17">CECyT No. 17</option>
+                                <option value="cecyt18">CECyT No. 18</option>
+                                <option value="cecyt19">CECyT No. 19</option>
+                                <option value="" disabled>Nivel Superior</option>
+                                <option value="cicsTomas">CICS Unidad Santo Tomás</option>
+                                <option value="cicsMilpa">CICS Unidad Milpa Alta</option>
+                                <option value="enba">ENBA</option>
+                                <option value="encb">ENCB</option>
+                                <option value="enmh">ENMyH</option>
+                                <option value="escaTomas">ESCA Unidad Santo Tomás</option>
+                                <option value="escaTetepan">ESCA Unidad Tetepan</option>
+                                <option value="escom">ESCOM</option>
+                                <option value="ese">ESE</option>
+                                <option value="eseo">ESEO</option>
+                                <option value="esfm">ESFM</option>
+                                <option value="esiqie">ESIQIE</option>
+                                <option value="esm">ESM</option>
+                                <option value="est">EST</option>
+                                <option value="esiaTecama">ESIA Unidad Tacamachalco</option>
+                                <option value="esiaZacatenco">ESIA Unidad Zacatenco</option>
+                                <option value="esiaTicoman">ESIA Unidad Ticomán</option>
+                                <option value="esimeAzcap">ESIME Unidad Azcapotzalco</option>
+                                <option value="esimeZacatenco">ESIME Unidad Zacatenco</option>
+                                <option value="esimeCul">ESIME Unidad Culhuacán</option>
+                                <option value="esimeTicoman">ESIME Unidad Ticomán</option>
+                                <option value="upiicCoa">UPIIC Campus Coahuila</option>
+                                <option value="upibi">UPIBI</option>
+                                <option value="upiip">UPIIP Campus Palenque</option>
+                                <option value="upiig">UPIIG Campus Guanajuato</option>
+                                <option value="upiiz">UPIIZ Campus Zacatecas</option>
+                                <option value="upiih">UPIIH Campus Hidalgo</option>
+                                <option value="upiit">UPIIT Campus Tlaxcala</option>
+                                <option value="upiicsa">UPIICSA</option>
+                                <option value="upiita">UPIITA</option>
+                                <option value="upiem">UPIEM</option>
+                            </select>
+                        </div>
+                        <div class="col ml-auto">
+                            <label>Horario De Trabajo</label>
+                            <select class="form-select mb-3" aria-label=".form-select-lg example" name="horario">
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="7am3pm">07:00am-15:00pm</option>
+                                <option value="8am3pm">08:00am-15:00pm</option>
+                                <option value="7am2pm">07:00am-14:00pm</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="row ml-auto">
+                            <div class="col">
+                                <label for="correo">Correo</label>
+                                <input type="text" name="correo" class="form-control">
+                            </div>
+                            <div class="col ml-auto">
+                                <label for="extension">Extension</label>
+                                <input type="text" name="extension" class="form-control">
+                            </div>
+                        </div>
+                </div>
+            </fieldset>
+            <br><br>
+            <div class="row">
+                <div class="col-1">
+                    <button class="btn btn-primary btn-lg " type="button" id="enviar">Enviar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary btn-lg " type="button">Limpiar</button>
+                </div>
+            </div>
+        </form>
+        <br><br><br><br>
+    </div>
+    <!--Fin formulario-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/formcontrol.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#enviar').click(function(){
+                var data = $('#registro').serialize();
+                $.ajax({
+                    type:"POST",
+                    url:"savedata.php",
+                    data:data,
+                    success:function(r){
+                        if(r==1){
+                            alert("Registro Exitoso");
+                        }
+                        else{
+                            alert("Fallo en registro");
+                        }
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
