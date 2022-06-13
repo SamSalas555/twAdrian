@@ -5,7 +5,7 @@ const addModal = new bootstrap.Modal(document.getElementById("addNewUserModal"))
 const editModal = new bootstrap.Modal(document.getElementById("editUserModal"));
 const tbody = document.querySelector("tbody");
 
-// Add New User Ajax Request
+// Request de Ajax
 addForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -34,7 +34,7 @@ addForm.addEventListener("submit", async (e) => {
   }
 });
 
-// Fetch All Users Ajax Request
+// Obtener los usuarios del crud
 const fetchAllUsers = async () => {
   const data = await fetch("action.php?read=1", {
     method: "GET",
@@ -44,7 +44,7 @@ const fetchAllUsers = async () => {
 };
 fetchAllUsers();
 
-// Edit User Ajax Request
+// Editar usuarios
 tbody.addEventListener("click", (e) => {
   if (e.target && e.target.matches("a.editLink")) {
     e.preventDefault();
@@ -65,7 +65,7 @@ const editUser = async (id) => {
   document.getElementById("phone").value = response.phone;
 };
 
-// Update User Ajax Request
+// Actualizar
 updateForm.addEventListener("submit", async (e) => {
   e.preventDefault();
 

@@ -26,20 +26,6 @@ CREATE TABLE DERECHOHABIENTE(
     	PRIMARY KEY(nemp,contrasena)
 )
 
-CREATE TABLE nino(
-    apPatN varchar(50),
-    apMat varchar(50),
-    nombreN varchar(50),
-    fnac date,
-    curpN varchar(20),
-    imagen longblob,
-    folio int not null AUTO_INCREMENT,
-    nemp varchar(20),
-    grupo varchar(50),
-    cendi varchar(50),
-    ciclo varchar(50),
-    CONSTRAINT fkemp FOREING KEY(nemp) REFERENCES derechohabiente(nemp),
-
-)
+CREATE TABLE nino( apPatN varchar(50), apMat varchar(50), nombreN varchar(50), fnac date, curpN varchar(20), imagen longblob, folio int not null AUTO_INCREMENT, nemp varchar(20), grupo varchar(50), cendi varchar(50), ciclo varchar(50), CONSTRAINT fkemp FOREIGN KEY(nemp) REFERENCES derechohabiente(nemp), CONSTRAINT pkemp PRIMARY KEY(folio,nemp) ); 
 
 INSERT INTO conyuge(`apPatC`, `apMatC`, `nombreC`, `calleC`, `numExtC`, `numIntC`, `coloniaC`, `municipioC`, `entidadfedC`, `cpC`, `telfijoC`, `telcelC`, `trabajo`, `ocupacion`, `teltrabajo`, `telceltrabajo`, `religion`, `nemp`) VALUES('apPat', 'apMatC', 'nombreC', 'calleC', '5', '5', 'coloniaC', 'municipioC', 'entidadfedC', '30', '555', '5555', 'sadsda', 'asdasd', '444', '444', '444', '44')
