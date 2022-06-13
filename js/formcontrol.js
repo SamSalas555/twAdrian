@@ -1,6 +1,7 @@
-const formulario = $("#formulario"); //guarda TODO el FORMULARIO en una constante
-const inputs = $('#formulario input'); //guarda TODAS las INPUTS dentro del formulario
+const formulario = $("#formulario"); 
+const inputs = $('#formulario form-control'); 
 const expresiones = {
+  //Expresiones regulares usadas oara la validacion del formulario
   nombre: /^((([A-ZÁÉÍÓÚÑ]{1})[a-záéíóúñ]+\s?){1,3})$/,
   apePaterno:/^((([A-ZÁÉÍÓÚÑ]{1})[a-záéíóúñ]+\s?){1,3})$/,
   apeMaterno:/^((([A-ZÁÉÍÓÚÑ]{1})[a-záéíóúñ]+\s?){1,3})$/,
@@ -56,26 +57,10 @@ $(function() {
         icono.addClass("formularioValidacion");
       });
     }else{
-      $(".formularioMensajeError").addClass("formularioMensajeError-Activo")
+      $(".formControl").addClass("invalido")
     }
 
   });
-
-  $('.datepicker').datepicker({//materialize CALENDARIO
-  minDate: new Date(2015, 5, 14),
-  autoClose: true
-  });
-  $('select').formSelect(); //materialize SELECT
-  $('#fechaNacimiento').on('change', calcularEdad);
-
-  $('#datosCon').hide();//MOSTRAR O NO LOS DATOS DEL CONYUGE
-    inputs.on('change', function() {
-      if ($('.no').prop('checked')) {
-        $('#datosCon').hide();
-      } else {
-        $('#datosCon').show();
-      }
-    });
 
   inputs.each(function() {
     $(this).keyup(validarFormulario); //cada que dejamos de presionar una tecla
